@@ -42,7 +42,7 @@ void button_callback(uint gpio, uint32_t events) {
         led_active = true;
         led_state = 0;
         gpio_put(RED_LED, 1); // Liga o LED vermelho
-        gpio_put(BLUE_LED, 1); // Liga o LED amarelo
+        gpio_put(BLUE_LED, 1); // Liga o LED azul
         gpio_put(GREEN_LED, 1); // Liga o LED verde
         add_alarm_in_ms(3000, turn_off_callback, NULL, false);
     }
